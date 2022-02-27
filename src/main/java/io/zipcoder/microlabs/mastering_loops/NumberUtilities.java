@@ -4,13 +4,7 @@ package io.zipcoder.microlabs.mastering_loops;
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
 
-        // : Given
-        //int start = 5;
-        // int stop = 20;
-        // : When
-        //String outcome = NumberUtilities.getEvenNumbers(min, max);
-// : Then
-//System.out.println(outcome);
+
 
         String even = "";
         for (int i = start; i < stop; i++){
@@ -21,14 +15,8 @@ public class NumberUtilities {
         return even;
     }
     public static String getOddNumbers(int start, int stop) {
-    // : Given
-    //int start = 5;
-    //int stop = 20;
-    // : When
-    //String outcome = NumberUtilities.getOddNumbers(min, max);
 
-// : Then
-//System.out.println(outcome);
+
         String odd = "";
         for (int i = start; i < stop; i++){
             if (i % 2 != 0){
@@ -39,50 +27,50 @@ public class NumberUtilities {
     }
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+        //Description
+        //Given two integers, start, and stop, return a String concatenation of all values squared between start up to and not including stop.
+
+        String square = "";
+        int squared;
+        for (int i = start; i < stop; i+=step) {
+            squared = (int) Math.pow(i,2);
+            square += Integer.toString(squared);
+        }
+        return square;
     }
 
-    // : Given
-    //int start = 5;
-    //int stop = 20;
-    // : When
-    //String outcome = NumberUtilities.getOddNumbers(min, max);
-// : Then
-//System.out.println(outcome);
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        String actual = "";
+        for (int i = 0; i < stop; i++){
+            actual += i;
+        }
+        return actual;
     }
-
-    // : Given
-    //int start = 5;
-    //int stop = 20;
-    //int step = 5;
-    // : When
-    //String outcome = NumberUtilities.getRange(min, max, step);
-// : Then
-//System.out.println(outcome);
 
     public static String getRange(int start, int stop) {
-        return null;
+        String actual = "";
+        for (int i = start; i < stop; i++){
+            actual += i;
+        }
+        return actual;
     }
 
-
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String actual = "";
+        for (int i = start; i < stop; i+=step){
+            actual += i;
+        }
+        return actual;
     }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String exp = "";
+        int expt;
+            for (int i = start; i < stop; i+=step){
+            expt = (int) Math.pow(i,exponent);
+            exp += Integer.toString(expt);
+        }
+            return exp;
     }
-    // : Given
-    //int start = 5;
-    //int stop = 20;
-    //int step = 5;
-    // int exponent = 2;
-    // : When
-    //String outcome = NumberUtilities.getOddNumbers(min, max);
-// : Then
-//System.out.println(outcome);
-
 }
