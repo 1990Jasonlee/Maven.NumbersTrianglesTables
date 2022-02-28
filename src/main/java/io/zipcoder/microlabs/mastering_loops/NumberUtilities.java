@@ -27,32 +27,16 @@ public class NumberUtilities {
     }
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        //Description
-        //Given two integers, start, and stop, return a String concatenation of all values squared between start up to and not including stop.
+        return NumberUtilities.getExponentiations(start, stop, step, 2);
 
-        String square = "";
-        int squared;
-        for (int i = start; i < stop; i+=step) {
-            squared = (int) Math.pow(i,2);
-            square += Integer.toString(squared);
-        }
-        return square;
     }
 
     public static String getRange(int stop) {
-        String actual = "";
-        for (int i = 0; i < stop; i++){
-            actual += i;
-        }
-        return actual;
+        return NumberUtilities.getRange( 0, stop, 1);
     }
 
     public static String getRange(int start, int stop) {
-        String actual = "";
-        for (int i = start; i < stop; i++){
-            actual += i;
-        }
-        return actual;
+        return NumberUtilities.getRange( start, stop, 1);
     }
 
     public static String getRange(int start, int stop, int step) {
