@@ -2,11 +2,11 @@ package io.zipcoder.microlabs.mastering_loops;
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return TableUtilities.getMultiplicationTable(5);
+        return TableUtilities.getMultiplicationTable(4);
     }
 
     public static String getLargeMultiplicationTable() {
-        return TableUtilities.getMultiplicationTable(10);
+        return TableUtilities.getMultiplicationTable(9);
     }
 
     public static String getMultiplicationTable(int tableSize) {
